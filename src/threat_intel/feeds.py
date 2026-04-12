@@ -192,6 +192,9 @@ def abuseipdb_check_ip(ip: str) -> dict:
 
 
 def abuseipdb_blacklist(limit: int = 100, min_score: int = 90) -> list[dict]:
+    if not ABUSEIPDB_API_KEY:
+        raise ValueError("ABUSEIPDB_API_KEY not set in .env")
+
     cache_key = f"abuseipdb_blacklist_{limit}_{min_score}"
     cached = _cache_get(cache_key)
     if cached:
@@ -215,7 +218,7 @@ def abuseipdb_blacklist(limit: int = 100, min_score: int = 90) -> list[dict]:
         _cache_set(cache_key, data)
         return data
     except requests.RequestException as e:
-        return []
+        raise RuntimeError(f"AbuseIPDB blacklist request failed: {e}") from e
 
 
 # ─── URLhaus ──────────────────────────────────────────────────────────────────

@@ -57,12 +57,11 @@ def run(
             }
             for entry in abuse_ips
         ]
-        console.print(f"  [green]OK[/green] {len(abuse_iocs)} IPs from AbuseIPDB")
-    except ValueError as e:
-        console.print(f"  [bold red]FAIL AbuseIPDB config error: {e}[/bold red]")
+    except (ValueError, RuntimeError) as e:
+        console.print(f"  [bold red]FAIL AbuseIPDB error: {e}[/bold red]")
         raise typer.Exit()
     except Exception as e:
-        console.print(f"  [bold red]FAIL AbuseIPDB failed: {e}[/bold red]")
+        console.print(f"  [bold red]FAIL AbuseIPDB unexpected error: {e}[/bold red]")
         raise typer.Exit()
 
     # Step 3 - Fetch URLhaus recent URLs

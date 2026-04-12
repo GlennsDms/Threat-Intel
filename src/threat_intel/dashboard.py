@@ -20,7 +20,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("🛡️ Threat Intelligence Dashboard")
+st.title(":shield: Threat Intelligence Dashboard")
 st.caption("Aggregates IOCs from OTX, AbuseIPDB, and URLhaus")
 
 # ─── Sidebar controls ─────────────────────────────────────────────────────────
@@ -119,12 +119,13 @@ if run_button:
                 }
                 for e in abuse_ips if e.get("ipAddress")
             ]
+            all_iocs += abuse_iocs
             st.success(f"AbuseIPDB: {len(abuse_iocs)} IPs")
-        except ValueError as e:
-            st.error(f"AbuseIPDB config error: {e}")
+        except (ValueError, RuntimeError) as e:
+            st.error(f"AbuseIPDB error: {e}")
             st.stop()
         except Exception as e:
-            st.error(f"AbuseIPDB failed: {e}")
+            st.error(f"AbuseIPDB unexpected error: {e}")
             st.stop()
 
     with st.spinner("Fetching URLhaus URLs..."):

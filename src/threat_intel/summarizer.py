@@ -85,7 +85,7 @@ Write the executive report now:"""
 
 
 def format_report_for_terminal(report: str, stats: dict, generated_at: str) -> str:
-    divider = "─" * 60
+    divider = "-" * 60
     return f"""
 {divider}
   THREAT INTELLIGENCE REPORT
