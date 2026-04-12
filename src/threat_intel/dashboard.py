@@ -16,7 +16,7 @@ from threat_intel.summarizer import generate_report
 
 st.set_page_config(
     page_title="Threat Intel Dashboard",
-    page_icon="🛡️",
+    page_icon=":shield:",
     layout="wide",
 )
 
@@ -71,7 +71,7 @@ if lookup_button and lookup_value:
                 st.error(f"AbuseIPDB failed: {e}")
 
     with cols[2]:
-        if lookup_type in ["domain", "hostname", "url"]:
+        if lookup_type in ["domain", "hostname"]:
             st.markdown("**URLhaus**")
             try:
                 urlhaus = urlhaus_lookup_host(lookup_value)
@@ -80,7 +80,15 @@ if lookup_button and lookup_value:
             except Exception as e:
                 st.error(f"URLhaus failed: {e}")
 
-    st.divider()
+        if lookup_type == "url":
+            st.markdown("**URLhaus**")
+            try:
+                from threat_intel.feeds import urlhaus_lookup_url
+                urlhaus = urlhaus_lookup_url(lookup_value)
+                st.write(f"Status: {urlhaus.get('query_status')}")
+                st.write(f"Threat: {urlhaus.get('threat', 'unknown')}")
+            except Exception as e:
+                st.error(f"URLhaus failed: {e}")
 
 # ─── Main analysis ────────────────────────────────────────────────────────────
 
@@ -111,10 +119,13 @@ if run_button:
                 }
                 for e in abuse_ips if e.get("ipAddress")
             ]
-            all_iocs += abuse_iocs
             st.success(f"AbuseIPDB: {len(abuse_iocs)} IPs")
+        except ValueError as e:
+            st.error(f"AbuseIPDB config error: {e}")
+            st.stop()
         except Exception as e:
             st.error(f"AbuseIPDB failed: {e}")
+            st.stop()
 
     with st.spinner("Fetching URLhaus URLs..."):
         try:

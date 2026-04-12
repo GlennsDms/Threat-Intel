@@ -4,7 +4,7 @@ import time
 import hashlib
 import requests
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -34,7 +34,9 @@ def _cache_get(key: str) -> dict | None:
     try:
         data = json.loads(path.read_text())
         cached_at = datetime.fromisoformat(data["_cached_at"])
-        if datetime.utcnow() - cached_at > timedelta(hours=CACHE_TTL_HOURS):
+        if cached_at.tzinfo is None:
+            cached_at = cached_at.replace(tzinfo=timezone.utc)
+        if datetime.now(timezone.utc) - cached_at > timedelta(hours=CACHE_TTL_HOURS):
             return None
         return data["payload"]
     except Exception:
@@ -45,7 +47,7 @@ def _cache_set(key: str, payload: dict):
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     path = _cache_path(key)
     path.write_text(json.dumps({
-        "_cached_at": datetime.utcnow().isoformat(),
+        "_cached_at": datetime.now(timezone.utc).isoformat(),
         "payload": payload,
     }))
 

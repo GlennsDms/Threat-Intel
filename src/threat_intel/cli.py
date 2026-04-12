@@ -29,8 +29,6 @@ def run(
     no_llm: bool = typer.Option(False, help="Skip LLM summarization"),
 ):
     """Fetch threat intel feeds, correlate IOCs, and generate a report."""
-    console.print("DEBUG: starting run")
-
     console.print(Panel("[bold cyan]Threat Intelligence Aggregator[/bold cyan]", box=box.ROUNDED))
 
     # Step 1 - Fetch OTX
@@ -38,9 +36,9 @@ def run(
     try:
         pulse_data = otx_get_subscribed_pulses(limit=pulses)
         otx_iocs = otx_extract_iocs(pulse_data)
-        console.print(f"  [green]✓[/green] {len(otx_iocs)} IOCs from {len(pulse_data)} pulses")
+        console.print(f"  [green]OK[/green] {len(otx_iocs)} IOCs from {len(pulse_data)} pulses")
     except Exception as e:
-        console.print(f"  [red]✗ OTX failed: {e}[/red]")
+        console.print(f"  [red]FAIL OTX failed: {e}[/red]")
         otx_iocs = []
 
     # Step 2 - Fetch AbuseIPDB blacklist
@@ -59,10 +57,13 @@ def run(
             }
             for entry in abuse_ips
         ]
-        console.print(f"  [green]✓[/green] {len(abuse_iocs)} IPs from AbuseIPDB")
+        console.print(f"  [green]OK[/green] {len(abuse_iocs)} IPs from AbuseIPDB")
+    except ValueError as e:
+        console.print(f"  [bold red]FAIL AbuseIPDB config error: {e}[/bold red]")
+        raise typer.Exit()
     except Exception as e:
-        console.print(f"  [red]✗ AbuseIPDB failed: {e}[/red]")
-        abuse_iocs = []
+        console.print(f"  [bold red]FAIL AbuseIPDB failed: {e}[/bold red]")
+        raise typer.Exit()
 
     # Step 3 - Fetch URLhaus recent URLs
     console.print("[cyan]Fetching URLhaus recent malicious URLs...[/cyan]")
@@ -78,9 +79,9 @@ def run(
             }
             for u in recent_urls if u.get("url")
         ]
-        console.print(f"  [green]✓[/green] {len(urlhaus_iocs)} URLs from URLhaus")
+        console.print(f"  [green]OK[/green] {len(urlhaus_iocs)} URLs from URLhaus")
     except Exception as e:
-        console.print(f"  [red]✗ URLhaus failed: {e}[/red]")
+        console.print(f"  [red]FAIL URLhaus failed: {e}[/red]")
         urlhaus_iocs = []
 
     # Step 4 - Correlate
@@ -171,7 +172,7 @@ def lookup(
             console.print(f"  [red]Failed: {e}[/red]")
 
     # URLhaus (for domains and URLs)
-    if ioc_type in ["domain", "hostname", "url"]:
+    if ioc_type in ["domain", "hostname"]:
         console.print("[cyan]URLhaus...[/cyan]")
         try:
             urlhaus = urlhaus_lookup_host(ioc)
@@ -182,6 +183,12 @@ def lookup(
         except Exception as e:
             console.print(f"  [red]Failed: {e}[/red]")
 
-
-if __name__ == "__main__":
-    app()
+    if ioc_type == "url":
+        console.print("[cyan]URLhaus...[/cyan]")
+        try:
+            from threat_intel.feeds import urlhaus_lookup_url
+            urlhaus = urlhaus_lookup_url(ioc)
+            console.print(f"  Status: [bold]{urlhaus.get('query_status')}[/bold]")
+            console.print(f"  Threat: {urlhaus.get('threat', 'unknown')}")
+        except Exception as e:
+            console.print(f"  [red]Failed: {e}[/red]")

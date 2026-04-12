@@ -1,5 +1,5 @@
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def correlate(iocs: list[dict]) -> dict:
@@ -47,7 +47,7 @@ def correlate(iocs: list[dict]) -> dict:
         },
         "high_confidence_iocs": high_confidence,
         "iocs_by_value": dict(by_value),
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
     }
 
 
