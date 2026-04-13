@@ -2,15 +2,15 @@
 
 Pulls threat intelligence from OTX, AbuseIPDB, and URLhaus, correlates the IOCs, and writes an executive report using a local LLM. Also has a Streamlit dashboard if you prefer something visual.
 
-Built to understand how CTI actually works — where IOCs come from, how they get scored, and why most of them are useless without cross-source confirmation.
+Built to understand how CTI actually works, where IOCs come from, how they get scored, and why most of them are useless without cross-source confirmation.
 
 ## What it does
 
 Fetches from three sources:
 
-- **AlienVault OTX** — community threat pulses with IPs, domains, hashes, and URLs
-- **AbuseIPDB** — IPs reported for abuse, with confidence scores and report counts
-- **URLhaus** — recently observed malicious URLs
+- **AlienVault OTX** - community threat pulses with IPs, domains, hashes, and URLs
+- **AbuseIPDB** - IPs reported for abuse, with confidence scores and report counts
+- **URLhaus** - recently observed malicious URLs
 
 Deduplicates everything, scores each IOC by risk, flags the ones that show up in more than one source, and feeds the results to a local LLM to generate a report a security team lead can actually read.
 
@@ -105,7 +105,7 @@ src/threat_intel/
 
 ## Limitations
 
-Risk scoring is heuristic. URLhaus public API sometimes returns empty results. The LLM report quality depends on how many cross-source matches there are — with mostly single-source IOCs it will be thin. No persistence between runs.
+Risk scoring is heuristic. URLhaus public API sometimes returns empty results. The LLM report quality depends on how many cross-source matches there are, with mostly single-source IOCs it will be thin. No persistence between runs.
 
 ## Roadmap
 
