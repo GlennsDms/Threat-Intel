@@ -102,7 +102,7 @@ def run(
     stats_table.add_row("Total IOCs", str(stats["total_iocs"]))
     stats_table.add_row("Unique values", str(stats["unique_iocs"]))
     stats_table.add_row("Cross-source matches", str(stats["cross_source_matches"]))
-    stats_table.add_row("High confidence (≥75)", str(stats["high_confidence_count"]))
+    stats_table.add_row("High confidence (>=75)", str(stats["high_confidence_count"]))
     for source, count in stats["by_source"].items():
         stats_table.add_row(f"  From {source}", str(count))
 

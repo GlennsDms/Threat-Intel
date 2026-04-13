@@ -1,4 +1,5 @@
 import pytest
+import requests
 from unittest.mock import patch, MagicMock
 from pathlib import Path
 from threat_intel.feeds import (
@@ -7,6 +8,7 @@ from threat_intel.feeds import (
     _cache_set,
     otx_extract_iocs,
     abuseipdb_check_ip,
+    abuseipdb_blacklist,
 )
 
 
@@ -105,3 +107,35 @@ def test_abuseipdb_check_ip_failure(mock_get, tmp_path, monkeypatch):
     result = abuseipdb_check_ip("9.9.9.9")
     assert "error" in result
     assert result["source"] == "AbuseIPDB"
+
+def test_abuseipdb_blacklist_raises_without_key(monkeypatch):
+    monkeypatch.setattr("threat_intel.feeds.ABUSEIPDB_API_KEY", "")
+    with pytest.raises(ValueError, match="ABUSEIPDB_API_KEY"):
+        abuseipdb_blacklist()
+
+
+@patch("threat_intel.feeds.requests.get")
+def test_abuseipdb_blacklist_raises_on_request_failure(mock_get, monkeypatch):
+    monkeypatch.setattr("threat_intel.feeds.ABUSEIPDB_API_KEY", "fake_key")
+    mock_get.side_effect = requests.exceptions.RequestException("timeout")
+    with pytest.raises(RuntimeError, match="AbuseIPDB blacklist request failed"):
+        abuseipdb_blacklist()
+
+
+@patch("threat_intel.feeds.requests.get")
+def test_abuseipdb_blacklist_success(mock_get, tmp_path, monkeypatch):
+    monkeypatch.setattr("threat_intel.feeds.CACHE_DIR", tmp_path)
+    monkeypatch.setattr("threat_intel.feeds.ABUSEIPDB_API_KEY", "fake_key")
+
+    mock_response = MagicMock()
+    mock_response.json.return_value = {
+        "data": [
+            {"ipAddress": "1.2.3.4", "abuseConfidenceScore": 95, "totalReports": 10, "countryCode": "RU"},
+        ]
+    }
+    mock_response.raise_for_status = MagicMock()
+    mock_get.return_value = mock_response
+
+    result = abuseipdb_blacklist(limit=1)
+    assert len(result) == 1
+    assert result[0]["ipAddress"] == "1.2.3.4"
