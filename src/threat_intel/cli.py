@@ -5,6 +5,8 @@ from rich.panel import Panel
 from rich import box
 from pathlib import Path
 from datetime import datetime
+from threat_intel.alerts import dispatch
+from threat_intel.exporter import to_json, to_stix
 
 from threat_intel.feeds import (
     otx_get_subscribed_pulses,
@@ -27,6 +29,7 @@ def run(
     pulses: int = typer.Option(10, help="Number of OTX pulses to fetch"),
     blacklist: int = typer.Option(50, help="Number of IPs from AbuseIPDB blacklist"),
     no_llm: bool = typer.Option(False, help="Skip LLM summarization"),
+    export: bool = typer.Option(False, help="Export report as JSON and STIX"),
 ):
     """Fetch threat intel feeds, correlate IOCs, and generate a report."""
     console.print(Panel("[bold cyan]Threat Intelligence Aggregator[/bold cyan]", box=box.ROUNDED))
@@ -126,6 +129,22 @@ def run(
         )
 
     console.print(ioc_table)
+
+    # Step - Alerts
+    alert_results = dispatch(top, stats)
+    if alert_results["slack"]:
+        console.print("[green]OK[/green] Slack alert sent")
+    if alert_results["email"]:
+        console.print("[green]OK[/green] Email alert sent")
+
+    # Step - Export
+    if export:
+        ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        json_path = Path(f"exports/report_{ts}.json")
+        stix_path = Path(f"exports/report_{ts}.stix.json")
+        to_json(correlated, top, stats, json_path)
+        to_stix(top, stix_path)
+        console.print(f"[green]OK[/green] Exported to {json_path} and {stix_path}")
 
     # Step 7 - LLM report
     if not no_llm:
