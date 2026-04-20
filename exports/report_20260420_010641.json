@@ -1,0 +1,4173 @@
+{
+  "generated_at": "2026-04-20T01:06:41.452935+00:00",
+  "stats": {
+    "total_iocs": 179,
+    "unique_iocs": 179,
+    "cross_source_matches": 0,
+    "high_confidence_count": 0,
+    "by_type": {
+      "CVE": 19,
+      "hostname": 14,
+      "domain": 15,
+      "FileHash-MD5": 15,
+      "FileHash-SHA1": 14,
+      "FileHash-SHA256": 35,
+      "URL": 11,
+      "IPv4": 56
+    },
+    "top_countries": {
+      "US": 13,
+      "RO": 6,
+      "HK": 5,
+      "CN": 4,
+      "NL": 4,
+      "DE": 3,
+      "IN": 3,
+      "SG": 2,
+      "MD": 1,
+      "BG": 1
+    },
+    "by_source": {
+      "OTX": 129,
+      "AbuseIPDB": 50
+    }
+  },
+  "top_iocs": [
+    {
+      "value": "20.163.32.211",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "US"
+    },
+    {
+      "value": "109.91.4.177",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "DE"
+    },
+    {
+      "value": "2.57.122.196",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "RO"
+    },
+    {
+      "value": "164.90.166.126",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "DE"
+    },
+    {
+      "value": "80.245.93.133",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "MD"
+    },
+    {
+      "value": "18.221.179.104",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "US"
+    },
+    {
+      "value": "221.10.187.253",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "CN"
+    },
+    {
+      "value": "146.88.240.182",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "US"
+    },
+    {
+      "value": "40.83.182.122",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "US"
+    },
+    {
+      "value": "66.132.186.226",
+      "type": "IPv4",
+      "sources": [
+        "AbuseIPDB"
+      ],
+      "risk_score": 70,
+      "tags": [],
+      "abuse_score": 100,
+      "country": "US"
+    }
+  ],
+  "all_iocs": [
+    {
+      "value": "CVE-2025-3248",
+      "entries": [
+        {
+          "value": "CVE-2025-3248",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "CVE-2026-33017: How attackers compromised Langflow AI pipelines in 20 hours",
+          "pulse_id": "69bd18a61f631ff045510990",
+          "tags": [
+            "cve-2026-33017",
+            "exploitation",
+            "data exfiltration",
+            "langflow",
+            "vulnerability",
+            "ai",
+            "rce",
+            "honeypot"
+          ],
+          "created": "2026-03-20T09:51:34"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2026-33017",
+      "entries": [
+        {
+          "value": "CVE-2026-33017",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "CVE-2026-33017: How attackers compromised Langflow AI pipelines in 20 hours",
+          "pulse_id": "69bd18a61f631ff045510990",
+          "tags": [
+            "cve-2026-33017",
+            "exploitation",
+            "data exfiltration",
+            "langflow",
+            "vulnerability",
+            "ai",
+            "rce",
+            "honeypot"
+          ],
+          "created": "2026-03-20T09:51:34"
+        }
+      ]
+    },
+    {
+      "value": "d6tcpc6flblph01gdcb0ku9ixih393m54.oast.live",
+      "entries": [
+        {
+          "value": "d6tcpc6flblph01gdcb0ku9ixih393m54.oast.live",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "CVE-2026-33017: How attackers compromised Langflow AI pipelines in 20 hours",
+          "pulse_id": "69bd18a61f631ff045510990",
+          "tags": [
+            "cve-2026-33017",
+            "exploitation",
+            "data exfiltration",
+            "langflow",
+            "vulnerability",
+            "ai",
+            "rce",
+            "honeypot"
+          ],
+          "created": "2026-03-20T09:51:34"
+        }
+      ]
+    },
+    {
+      "value": "d6tcpe7nsv6kk9rdrpggi37zmjfxw9imr.oast.me",
+      "entries": [
+        {
+          "value": "d6tcpe7nsv6kk9rdrpggi37zmjfxw9imr.oast.me",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "CVE-2026-33017: How attackers compromised Langflow AI pipelines in 20 hours",
+          "pulse_id": "69bd18a61f631ff045510990",
+          "tags": [
+            "cve-2026-33017",
+            "exploitation",
+            "data exfiltration",
+            "langflow",
+            "vulnerability",
+            "ai",
+            "rce",
+            "honeypot"
+          ],
+          "created": "2026-03-20T09:51:34"
+        }
+      ]
+    },
+    {
+      "value": "d6td5s9qte0bea7273e0wuou77jjx77uk.oast.pro",
+      "entries": [
+        {
+          "value": "d6td5s9qte0bea7273e0wuou77jjx77uk.oast.pro",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "CVE-2026-33017: How attackers compromised Langflow AI pipelines in 20 hours",
+          "pulse_id": "69bd18a61f631ff045510990",
+          "tags": [
+            "cve-2026-33017",
+            "exploitation",
+            "data exfiltration",
+            "langflow",
+            "vulnerability",
+            "ai",
+            "rce",
+            "honeypot"
+          ],
+          "created": "2026-03-20T09:51:34"
+        }
+      ]
+    },
+    {
+      "value": "d6tgbe1qte0a8rkffb3gqabqm8517exd3.oast.fun",
+      "entries": [
+        {
+          "value": "d6tgbe1qte0a8rkffb3gqabqm8517exd3.oast.fun",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "CVE-2026-33017: How attackers compromised Langflow AI pipelines in 20 hours",
+          "pulse_id": "69bd18a61f631ff045510990",
+          "tags": [
+            "cve-2026-33017",
+            "exploitation",
+            "data exfiltration",
+            "langflow",
+            "vulnerability",
+            "ai",
+            "rce",
+            "honeypot"
+          ],
+          "created": "2026-03-20T09:51:34"
+        }
+      ]
+    },
+    {
+      "value": "quickdocshare.com",
+      "entries": [
+        {
+          "value": "quickdocshare.com",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "bed2daedb43b0e5044edbabe6d1d27e8",
+      "entries": [
+        {
+          "value": "bed2daedb43b0e5044edbabe6d1d27e8",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "551e62437edab9e496ed3339f10a15cd35e3e819",
+      "entries": [
+        {
+          "value": "551e62437edab9e496ed3339f10a15cd35e3e819",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "d2e8d615e7c1a810993088a8c9291e0a4a7ed4c8",
+      "entries": [
+        {
+          "value": "d2e8d615e7c1a810993088a8c9291e0a4a7ed4c8",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "d874c3654bfb4fbf0c7c069f6e5b7ebd930415d0",
+      "entries": [
+        {
+          "value": "d874c3654bfb4fbf0c7c069f6e5b7ebd930415d0",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "f4532fc1e5d53a732fcc883f7125ceb06b985048",
+      "entries": [
+        {
+          "value": "f4532fc1e5d53a732fcc883f7125ceb06b985048",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "68c926af0d796a80fcaee24774b1ca0a2c393c3a0e30650c4d2d7965736043ca",
+      "entries": [
+        {
+          "value": "68c926af0d796a80fcaee24774b1ca0a2c393c3a0e30650c4d2d7965736043ca",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "ac591adea9a2305f9be6ae430996afd9b7432116f381b638014a0886a99c6287",
+      "entries": [
+        {
+          "value": "ac591adea9a2305f9be6ae430996afd9b7432116f381b638014a0886a99c6287",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "e675bc054481bdca6f8cd1d561869e18712dc05a42e5c24b9add7679efc7faf6",
+      "entries": [
+        {
+          "value": "e675bc054481bdca6f8cd1d561869e18712dc05a42e5c24b9add7679efc7faf6",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "https://cdn.eideasrl.it/Notice%20of%20Alleged%20Violation%20of%20Intellectual%20Property%20Rights_1770380091603.zip",
+      "entries": [
+        {
+          "value": "https://cdn.eideasrl.it/Notice%20of%20Alleged%20Violation%20of%20Intellectual%20Property%20Rights_1770380091603.zip",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "https://quickdocshare.com/DQ",
+      "entries": [
+        {
+          "value": "https://quickdocshare.com/DQ",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "https://quickdocshare.com/DQ/key",
+      "entries": [
+        {
+          "value": "https://quickdocshare.com/DQ/key",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "https://transfer.af-k.de:443/webdownload?deliveryUuid=a43da640-777f-40c0-95de-64987150c869",
+      "entries": [
+        {
+          "value": "https://transfer.af-k.de:443/webdownload?deliveryUuid=a43da640-777f-40c0-95de-64987150c869",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "cdn.eideasrl.it",
+      "entries": [
+        {
+          "value": "cdn.eideasrl.it",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "dq.bestshoppingday.com",
+      "entries": [
+        {
+          "value": "dq.bestshoppingday.com",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "logs.bestsaleshoppingday.com",
+      "entries": [
+        {
+          "value": "logs.bestsaleshoppingday.com",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "logs.bestshopingday.com",
+      "entries": [
+        {
+          "value": "logs.bestshopingday.com",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "mh.bestshopingday.com",
+      "entries": [
+        {
+          "value": "mh.bestshopingday.com",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "transfer.af-k.de",
+      "entries": [
+        {
+          "value": "transfer.af-k.de",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "fd16fecedab57b025ab53ad9ca4c882f",
+      "entries": [
+        {
+          "value": "fd16fecedab57b025ab53ad9ca4c882f",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "35efc4b75a1d70c38513b4dfe549da417aaa476bf7e9ebd00265aaa8c7295870",
+      "entries": [
+        {
+          "value": "35efc4b75a1d70c38513b4dfe549da417aaa476bf7e9ebd00265aaa8c7295870",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "http://quickdocshare.com/DQ",
+      "entries": [
+        {
+          "value": "http://quickdocshare.com/DQ",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "Copyright Lures Mask a Multi-Stage PureLog Stealer Attack on Key Industries",
+          "pulse_id": "69bd01b20154ae405e9187fe",
+          "tags": [
+            "copyright lure",
+            "fileless execution",
+            "targeted campaign",
+            "purelog stealer",
+            "information theft",
+            "evasion techniques",
+            "multi-stage attack"
+          ],
+          "created": "2026-03-20T08:13:39"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2023-27532",
+      "entries": [
+        {
+          "value": "CVE-2023-27532",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2024-37085",
+      "entries": [
+        {
+          "value": "CVE-2024-37085",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2024-55591",
+      "entries": [
+        {
+          "value": "CVE-2024-55591",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-32463",
+      "entries": [
+        {
+          "value": "CVE-2025-32463",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "adf675ffc1acb357f2d9f1a94e016f52",
+      "entries": [
+        {
+          "value": "adf675ffc1acb357f2d9f1a94e016f52",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "2cd15d5d4cc58d06cfb6be5eabc681925d0ce5ce",
+      "entries": [
+        {
+          "value": "2cd15d5d4cc58d06cfb6be5eabc681925d0ce5ce",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "3ab9575225e00a83a4ac2b534da5a710bdcf6eb72884944c437b5fbe5c5c9235",
+      "entries": [
+        {
+          "value": "3ab9575225e00a83a4ac2b534da5a710bdcf6eb72884944c437b5fbe5c5c9235",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "51b9f246d6da85631131fcd1fabf0a67937d4bdde33625a44f7ee6a3a7baebd2",
+      "entries": [
+        {
+          "value": "51b9f246d6da85631131fcd1fabf0a67937d4bdde33625a44f7ee6a3a7baebd2",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "4200b46a93c6ab059e2b34ce200c4a5b",
+      "entries": [
+        {
+          "value": "4200b46a93c6ab059e2b34ce200c4a5b",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "42bcc743c71a9ea083c1c750a398110582796762",
+      "entries": [
+        {
+          "value": "42bcc743c71a9ea083c1c750a398110582796762",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "42c062d6299ca9f76554441a29429404",
+      "entries": [
+        {
+          "value": "42c062d6299ca9f76554441a29429404",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "8901ce810f999f79c51c4d4f6c93fe6b",
+      "entries": [
+        {
+          "value": "8901ce810f999f79c51c4d4f6c93fe6b",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "d65c293efb5e6d033c83b2ac472bf0cb",
+      "entries": [
+        {
+          "value": "d65c293efb5e6d033c83b2ac472bf0cb",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "efd5366eb7473d6f7fb97ec7ac59f09d",
+      "entries": [
+        {
+          "value": "efd5366eb7473d6f7fb97ec7ac59f09d",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "2834114ff7e487c4ca3f50ca39f7d652dea1be98f885c388f01b6ff35309307b",
+      "entries": [
+        {
+          "value": "2834114ff7e487c4ca3f50ca39f7d652dea1be98f885c388f01b6ff35309307b",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "An Overview of The Gentlemen's TTPs",
+          "pulse_id": "69bd045137b178c16714dcf6",
+          "tags": [
+            "vasa locker",
+            "medusa",
+            "cve-2024-37085",
+            "raas",
+            "fortios",
+            "data-exfiltration",
+            "cve-2025-32463",
+            "lockbit 5.0",
+            "defense-evasion",
+            "babyk",
+            "ransomware",
+            "cve-2024-55591",
+            "the gentlemen",
+            "cve-2023-27532",
+            "babuk",
+            "exploit",
+            "lateral-movement",
+            "qilin",
+            "credential-theft"
+          ],
+          "created": "2026-03-20T08:24:50"
+        }
+      ]
+    },
+    {
+      "value": "281226ca0203537fa422b17102047dac314bc0c466ec71b2e6350d75f968f2a3",
+      "entries": [
+        {
+          "value": "281226ca0203537fa422b17102047dac314bc0c466ec71b2e6350d75f968f2a3",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "349e78de0fe66d1616890e835ede0d18580abe8830c549973d7df8a2a7ffdcec",
+      "entries": [
+        {
+          "value": "349e78de0fe66d1616890e835ede0d18580abe8830c549973d7df8a2a7ffdcec",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "81956d08c8efd2f0e29fd3962bcf9559c73b1591081f14a6297e226958c30d03",
+      "entries": [
+        {
+          "value": "81956d08c8efd2f0e29fd3962bcf9559c73b1591081f14a6297e226958c30d03",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "8bab731ac2f7d015b81c2002f518fff06ea751a34a711907e80e98cf70b557db",
+      "entries": [
+        {
+          "value": "8bab731ac2f7d015b81c2002f518fff06ea751a34a711907e80e98cf70b557db",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "adc1cf894cd35a7d7176ac5dab005bea55516bc9998d0c96223b6c0004723c37",
+      "entries": [
+        {
+          "value": "adc1cf894cd35a7d7176ac5dab005bea55516bc9998d0c96223b6c0004723c37",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "c3d4361939d3f6cf2fe798fef68d4713141c48dce7dd29d3838a5d0c66aa29c7",
+      "entries": [
+        {
+          "value": "c3d4361939d3f6cf2fe798fef68d4713141c48dce7dd29d3838a5d0c66aa29c7",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "http://imansport.ir/download_invitee.php",
+      "entries": [
+        {
+          "value": "http://imansport.ir/download_invitee.php",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "http://solpru.com/process/docusign.html",
+      "entries": [
+        {
+          "value": "http://solpru.com/process/docusign.html",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "https://bumptobabeco.top/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest'",
+      "entries": [
+        {
+          "value": "https://bumptobabeco.top/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest'",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "1b576ebba5b7bbd023eea1b15dac1ed3fb76a211",
+      "entries": [
+        {
+          "value": "1b576ebba5b7bbd023eea1b15dac1ed3fb76a211",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "bumptobabeco.top",
+      "entries": [
+        {
+          "value": "bumptobabeco.top",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "imansport.ir",
+      "entries": [
+        {
+          "value": "imansport.ir",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "solpru.com",
+      "entries": [
+        {
+          "value": "solpru.com",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "checkfirst.net.au",
+      "entries": [
+        {
+          "value": "checkfirst.net.au",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "From Invitation to Infection: How SILENTCONNECT Delivers ScreenConnect",
+          "pulse_id": "69bbd761dff7b64814123d3f",
+          "tags": [
+            "silentconnect",
+            "phishing",
+            "rmm",
+            "loader",
+            "uac bypass",
+            "evasion",
+            "screenconnect",
+            "peb masquerading"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "03298f85eaf8880222cf8a83b8ed75d90712c34a8a5299a60f47927ad044b43b",
+      "entries": [
+        {
+          "value": "03298f85eaf8880222cf8a83b8ed75d90712c34a8a5299a60f47927ad044b43b",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "New Malware Targets Users of Cobra DocGuard Software",
+          "pulse_id": "69bbd7618524d177761d1941",
+          "tags": [
+            "infostealer.speagle",
+            "plugx",
+            "cobra docguard",
+            "korplug",
+            "supply chain attack",
+            "ballistic missiles",
+            "evasion techniques",
+            "data exfiltration"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "d7f167cbf1676c14fd487219447e30fadf26885eb25ec4cafdeabe333bddf877",
+      "entries": [
+        {
+          "value": "d7f167cbf1676c14fd487219447e30fadf26885eb25ec4cafdeabe333bddf877",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "New Malware Targets Users of Cobra DocGuard Software",
+          "pulse_id": "69bbd7618524d177761d1941",
+          "tags": [
+            "infostealer.speagle",
+            "plugx",
+            "cobra docguard",
+            "korplug",
+            "supply chain attack",
+            "ballistic missiles",
+            "evasion techniques",
+            "data exfiltration"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "dcd3f06093bf34d81837d837c5a5935beb859ba6258e5a80c3a5f95638a13d4d",
+      "entries": [
+        {
+          "value": "dcd3f06093bf34d81837d837c5a5935beb859ba6258e5a80c3a5f95638a13d4d",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "New Malware Targets Users of Cobra DocGuard Software",
+          "pulse_id": "69bbd7618524d177761d1941",
+          "tags": [
+            "infostealer.speagle",
+            "plugx",
+            "cobra docguard",
+            "korplug",
+            "supply chain attack",
+            "ballistic missiles",
+            "evasion techniques",
+            "data exfiltration"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "fad8d0307db5328c8b9f283a2cc6f7e4f4333001623fef5bd5c32a1c094bf890",
+      "entries": [
+        {
+          "value": "fad8d0307db5328c8b9f283a2cc6f7e4f4333001623fef5bd5c32a1c094bf890",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "New Malware Targets Users of Cobra DocGuard Software",
+          "pulse_id": "69bbd7618524d177761d1941",
+          "tags": [
+            "infostealer.speagle",
+            "plugx",
+            "cobra docguard",
+            "korplug",
+            "supply chain attack",
+            "ballistic missiles",
+            "evasion techniques",
+            "data exfiltration"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "http://222.222.254.165:8090/CDGServer3/CDGClientDiagnostics?flag=syn_user_policy",
+      "entries": [
+        {
+          "value": "http://222.222.254.165:8090/CDGServer3/CDGClientDiagnostics?flag=syn_user_policy",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "New Malware Targets Users of Cobra DocGuard Software",
+          "pulse_id": "69bbd7618524d177761d1941",
+          "tags": [
+            "infostealer.speagle",
+            "plugx",
+            "cobra docguard",
+            "korplug",
+            "supply chain attack",
+            "ballistic missiles",
+            "evasion techniques",
+            "data exfiltration"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "http://60.30.147.18:8091/CDGServer3/CDGClientDiagnostics?flag=syn_user_policy",
+      "entries": [
+        {
+          "value": "http://60.30.147.18:8091/CDGServer3/CDGClientDiagnostics?flag=syn_user_policy",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "New Malware Targets Users of Cobra DocGuard Software",
+          "pulse_id": "69bbd7618524d177761d1941",
+          "tags": [
+            "infostealer.speagle",
+            "plugx",
+            "cobra docguard",
+            "korplug",
+            "supply chain attack",
+            "ballistic missiles",
+            "evasion techniques",
+            "data exfiltration"
+          ],
+          "created": "2026-03-19T11:00:50"
+        }
+      ]
+    },
+    {
+      "value": "335ad12a950f885073acdfebb250c93fb28ca3f374bbba5189986d9234dcbff4",
+      "entries": [
+        {
+          "value": "335ad12a950f885073acdfebb250c93fb28ca3f374bbba5189986d9234dcbff4",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Takes Aim at the Ransomware Throne",
+          "pulse_id": "69e1f1296b63ec46a94782ce",
+          "tags": [
+            "aes encryption",
+            "blackbasta affiliates",
+            "edr evasion",
+            "blackbasta",
+            "spam bombing",
+            "direct system calls",
+            "payouts king",
+            "quick assist",
+            "microsoft teams",
+            "cactus",
+            "rsa encryption"
+          ],
+          "created": "2026-04-17T08:36:58"
+        }
+      ]
+    },
+    {
+      "value": "d68ce82e82801cd487f9cd2d24f7b30e353cafd0704dcdf0bb8f12822d4227c2",
+      "entries": [
+        {
+          "value": "d68ce82e82801cd487f9cd2d24f7b30e353cafd0704dcdf0bb8f12822d4227c2",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Takes Aim at the Ransomware Throne",
+          "pulse_id": "69e1f1296b63ec46a94782ce",
+          "tags": [
+            "aes encryption",
+            "blackbasta affiliates",
+            "edr evasion",
+            "blackbasta",
+            "spam bombing",
+            "direct system calls",
+            "payouts king",
+            "quick assist",
+            "microsoft teams",
+            "cactus",
+            "rsa encryption"
+          ],
+          "created": "2026-04-17T08:36:58"
+        }
+      ]
+    },
+    {
+      "value": "bot.ddosvps.cc",
+      "entries": [
+        {
+          "value": "bot.ddosvps.cc",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2024-3400",
+      "entries": [
+        {
+          "value": "CVE-2024-3400",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2023-33538",
+      "entries": [
+        {
+          "value": "CVE-2023-33538",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "919f292a07a37f163f88527e725406187c8ecc637387ad24853fe49ce4e6ddf4",
+      "entries": [
+        {
+          "value": "919f292a07a37f163f88527e725406187c8ecc637387ad24853fe49ce4e6ddf4",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "9df711c3aef2bba17b622ddfd955452f8d8eb55899528fbc13d9540c52f13402",
+      "entries": [
+        {
+          "value": "9df711c3aef2bba17b622ddfd955452f8d8eb55899528fbc13d9540c52f13402",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "7bbb21fec19512d932b7a92652ed0c8f0fedea89f34b9d6f267cf39de0eb9b20",
+      "entries": [
+        {
+          "value": "7bbb21fec19512d932b7a92652ed0c8f0fedea89f34b9d6f267cf39de0eb9b20",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "4caaa18982cd4056fead54b98d57f9a2a1ddd654cf19a7ba2366dfadbd6033da",
+      "entries": [
+        {
+          "value": "4caaa18982cd4056fead54b98d57f9a2a1ddd654cf19a7ba2366dfadbd6033da",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "534b654531a6a540a144da9545ee343e1046f843d7de4c1091b46c3ee66a508b",
+      "entries": [
+        {
+          "value": "534b654531a6a540a144da9545ee343e1046f843d7de4c1091b46c3ee66a508b",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "56f21f412e898ad9e3ee05d5f44c44d9d7bcb9ecbfbdb9de11b8fa5a637aeef6",
+      "entries": [
+        {
+          "value": "56f21f412e898ad9e3ee05d5f44c44d9d7bcb9ecbfbdb9de11b8fa5a637aeef6",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "3fbd2a2e82ceb5e91eadbad02cb45ac618324da9b1895d81ebe7de765dca30e7",
+      "entries": [
+        {
+          "value": "3fbd2a2e82ceb5e91eadbad02cb45ac618324da9b1895d81ebe7de765dca30e7",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "cnc.vietdediserver.shop",
+      "entries": [
+        {
+          "value": "cnc.vietdediserver.shop",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "1e9b64497633d470a8294eb574ae0ada",
+      "entries": [
+        {
+          "value": "1e9b64497633d470a8294eb574ae0ada",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "2ae3d81112d9459045e6279fb7d013b1",
+      "entries": [
+        {
+          "value": "2ae3d81112d9459045e6279fb7d013b1",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "4543b9ac3ba5f4e7f8e18d130f31e552",
+      "entries": [
+        {
+          "value": "4543b9ac3ba5f4e7f8e18d130f31e552",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "77825aac7f035fa0a94f4ff35177b503",
+      "entries": [
+        {
+          "value": "77825aac7f035fa0a94f4ff35177b503",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "b3843345be4810ca5e116224b3d247c2",
+      "entries": [
+        {
+          "value": "b3843345be4810ca5e116224b3d247c2",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "db1dbfaef3362672d6bb89330b5fbb06",
+      "entries": [
+        {
+          "value": "db1dbfaef3362672d6bb89330b5fbb06",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "e7efe76a253a37e0f92ff1dbe3caf3e7",
+      "entries": [
+        {
+          "value": "e7efe76a253a37e0f92ff1dbe3caf3e7",
+          "type": "FileHash-MD5",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "23cad1f5b3b6776d26ae401688d4d2484917de27",
+      "entries": [
+        {
+          "value": "23cad1f5b3b6776d26ae401688d4d2484917de27",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "3693318e02ca114fcd6073b541f1d1e90a18cc43",
+      "entries": [
+        {
+          "value": "3693318e02ca114fcd6073b541f1d1e90a18cc43",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "466ea2205a239b937decfa8ed230cc87e1c26143",
+      "entries": [
+        {
+          "value": "466ea2205a239b937decfa8ed230cc87e1c26143",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "4f56614a69d7d6adbb994e3e3da54d1bcd9bb0b0",
+      "entries": [
+        {
+          "value": "4f56614a69d7d6adbb994e3e3da54d1bcd9bb0b0",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "70f964338fc891891bd70ff9393546729333ee89",
+      "entries": [
+        {
+          "value": "70f964338fc891891bd70ff9393546729333ee89",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "7cdd37a9c8a2b4b814fc2308eb00babe154b9664",
+      "entries": [
+        {
+          "value": "7cdd37a9c8a2b4b814fc2308eb00babe154b9664",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "c2cc464588846692f67bb9abdde5fedb88d0cb21",
+      "entries": [
+        {
+          "value": "c2cc464588846692f67bb9abdde5fedb88d0cb21",
+          "type": "FileHash-SHA1",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-59287",
+      "entries": [
+        {
+          "value": "CVE-2025-59287",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-21042",
+      "entries": [
+        {
+          "value": "CVE-2025-21042",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-55182",
+      "entries": [
+        {
+          "value": "CVE-2025-55182",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-66478",
+      "entries": [
+        {
+          "value": "CVE-2025-66478",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-14847",
+      "entries": [
+        {
+          "value": "CVE-2025-14847",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2026-1281",
+      "entries": [
+        {
+          "value": "CVE-2026-1281",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2026-1340",
+      "entries": [
+        {
+          "value": "CVE-2026-1340",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2026-1731",
+      "entries": [
+        {
+          "value": "CVE-2026-1731",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-0921",
+      "entries": [
+        {
+          "value": "CVE-2025-0921",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2025-23304",
+      "entries": [
+        {
+          "value": "CVE-2025-23304",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "CVE-2026-22584",
+      "entries": [
+        {
+          "value": "CVE-2026-22584",
+          "type": "CVE",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "00078aeeaca54b5d3c1237e964e9f956690b782e4ea160d81edc3c6b44e7f620",
+      "entries": [
+        {
+          "value": "00078aeeaca54b5d3c1237e964e9f956690b782e4ea160d81edc3c6b44e7f620",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "c321933e4e5970ba7299fe21778dab9398994c22ca0ba0422c6cbc3fbb95ea26",
+      "entries": [
+        {
+          "value": "c321933e4e5970ba7299fe21778dab9398994c22ca0ba0422c6cbc3fbb95ea26",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+          "pulse_id": "69e1f0ddb1aa33b71576ca92",
+          "tags": [
+            "cve-2023-33538",
+            "tp-link routers",
+            "iot exploitation",
+            "firmware analysis",
+            "condi botnet",
+            "command injection",
+            "wifi routers",
+            "mirai",
+            "condi",
+            "mirai botnet"
+          ],
+          "created": "2026-04-17T08:35:42"
+        }
+      ]
+    },
+    {
+      "value": "http://cdn.erpsaz.com/admin.php",
+      "entries": [
+        {
+          "value": "http://cdn.erpsaz.com/admin.php",
+          "type": "URL",
+          "source": "OTX",
+          "pulse_name": "Joomla SEO Spam Injector: Obfuscated PHP Backdoor Hijacking Site Visitors",
+          "pulse_id": "69e1f0e855758d808bea9915",
+          "tags": [
+            "obfuscation",
+            "php backdoor",
+            "dynamic content injection",
+            "remote loader",
+            "joomla",
+            "search engine manipulation",
+            "command-and-control",
+            "seo spam"
+          ],
+          "created": "2026-04-17T08:35:53"
+        }
+      ]
+    },
+    {
+      "value": "lashowroom.com",
+      "entries": [
+        {
+          "value": "lashowroom.com",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Joomla SEO Spam Injector: Obfuscated PHP Backdoor Hijacking Site Visitors",
+          "pulse_id": "69e1f0e855758d808bea9915",
+          "tags": [
+            "obfuscation",
+            "php backdoor",
+            "dynamic content injection",
+            "remote loader",
+            "joomla",
+            "search engine manipulation",
+            "command-and-control",
+            "seo spam"
+          ],
+          "created": "2026-04-17T08:35:53"
+        }
+      ]
+    },
+    {
+      "value": "cdn.erpsaz.com",
+      "entries": [
+        {
+          "value": "cdn.erpsaz.com",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Joomla SEO Spam Injector: Obfuscated PHP Backdoor Hijacking Site Visitors",
+          "pulse_id": "69e1f0e855758d808bea9915",
+          "tags": [
+            "obfuscation",
+            "php backdoor",
+            "dynamic content injection",
+            "remote loader",
+            "joomla",
+            "search engine manipulation",
+            "command-and-control",
+            "seo spam"
+          ],
+          "created": "2026-04-17T08:35:53"
+        }
+      ]
+    },
+    {
+      "value": "cdn.saholerp.com",
+      "entries": [
+        {
+          "value": "cdn.saholerp.com",
+          "type": "hostname",
+          "source": "OTX",
+          "pulse_name": "Joomla SEO Spam Injector: Obfuscated PHP Backdoor Hijacking Site Visitors",
+          "pulse_id": "69e1f0e855758d808bea9915",
+          "tags": [
+            "obfuscation",
+            "php backdoor",
+            "dynamic content injection",
+            "remote loader",
+            "joomla",
+            "search engine manipulation",
+            "command-and-control",
+            "seo spam"
+          ],
+          "created": "2026-04-17T08:35:53"
+        }
+      ]
+    },
+    {
+      "value": "83.136.209.22",
+      "entries": [
+        {
+          "value": "83.136.209.22",
+          "type": "IPv4",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "uw04webzoom.us",
+      "entries": [
+        {
+          "value": "uw04webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "ur01webzoom.us",
+      "entries": [
+        {
+          "value": "ur01webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "uv01webzoom.us",
+      "entries": [
+        {
+          "value": "uv01webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "188.227.196.252",
+      "entries": [
+        {
+          "value": "188.227.196.252",
+          "type": "IPv4",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "05e1761b535537287e7b72d103a29c4453742725600f59a34a4831eafc0b8e53",
+      "entries": [
+        {
+          "value": "05e1761b535537287e7b72d103a29c4453742725600f59a34a4831eafc0b8e53",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "2075fd1a1362d188290910a8c55cf30c11ed5955c04af410c481410f538da419",
+      "entries": [
+        {
+          "value": "2075fd1a1362d188290910a8c55cf30c11ed5955c04af410c481410f538da419",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "5e581f22f56883ee13358f73fabab00fcf9313a053210eb12ac18e66098346e5",
+      "entries": [
+        {
+          "value": "5e581f22f56883ee13358f73fabab00fcf9313a053210eb12ac18e66098346e5",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "5fbbca2d72840feb86b6ef8a1abb4fe2f225d84228a714391673be2719c73ac7",
+      "entries": [
+        {
+          "value": "5fbbca2d72840feb86b6ef8a1abb4fe2f225d84228a714391673be2719c73ac7",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "8fd5b8db10458ace7e4ed335eb0c66527e1928ad87a3c688595804f72b205e8c",
+      "entries": [
+        {
+          "value": "8fd5b8db10458ace7e4ed335eb0c66527e1928ad87a3c688595804f72b205e8c",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "95e893e7cdde19d7d16ff5a5074d0b369abd31c1a30962656133caa8153e8d63",
+      "entries": [
+        {
+          "value": "95e893e7cdde19d7d16ff5a5074d0b369abd31c1a30962656133caa8153e8d63",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "a05400000843fbad6b28d2b76fc201c3d415a72d88d8dc548fafd8bae073c640",
+      "entries": [
+        {
+          "value": "a05400000843fbad6b28d2b76fc201c3d415a72d88d8dc548fafd8bae073c640",
+          "type": "FileHash-SHA256",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "104.145.210.107",
+      "entries": [
+        {
+          "value": "104.145.210.107",
+          "type": "IPv4",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "83.136.208.246",
+      "entries": [
+        {
+          "value": "83.136.208.246",
+          "type": "IPv4",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "83.136.208.48",
+      "entries": [
+        {
+          "value": "83.136.208.48",
+          "type": "IPv4",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "83.136.210.180",
+      "entries": [
+        {
+          "value": "83.136.210.180",
+          "type": "IPv4",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "check02id.com",
+      "entries": [
+        {
+          "value": "check02id.com",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "uv03webzoom.us",
+      "entries": [
+        {
+          "value": "uv03webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "uv04webzoom.us",
+      "entries": [
+        {
+          "value": "uv04webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "uw03webzoom.us",
+      "entries": [
+        {
+          "value": "uw03webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "uw05webzoom.us",
+      "entries": [
+        {
+          "value": "uw05webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "ux06webzoom.us",
+      "entries": [
+        {
+          "value": "ux06webzoom.us",
+          "type": "domain",
+          "source": "OTX",
+          "pulse_name": "Dissecting macOS intrusion from lure to compromise",
+          "pulse_id": "69e1f157d8f8bb7547f8c23f",
+          "tags": [
+            "social engineering",
+            "north korea",
+            "systemupdate.app",
+            "tcc bypass",
+            "com.google.chromes.updaters",
+            "applescript",
+            "services",
+            "softwareupdate.app",
+            "cryptocurrency theft",
+            "com.apple.cli",
+            "macos",
+            "sapphire sleet",
+            "credential harvesting",
+            "icloudz"
+          ],
+          "created": "2026-04-17T08:37:43"
+        }
+      ]
+    },
+    {
+      "value": "20.163.32.211",
+      "entries": [
+        {
+          "value": "20.163.32.211",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "109.91.4.177",
+      "entries": [
+        {
+          "value": "109.91.4.177",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "DE",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "2.57.122.196",
+      "entries": [
+        {
+          "value": "2.57.122.196",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "RO",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "164.90.166.126",
+      "entries": [
+        {
+          "value": "164.90.166.126",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "DE",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "80.245.93.133",
+      "entries": [
+        {
+          "value": "80.245.93.133",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "MD",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "18.221.179.104",
+      "entries": [
+        {
+          "value": "18.221.179.104",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "221.10.187.253",
+      "entries": [
+        {
+          "value": "221.10.187.253",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "CN",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "146.88.240.182",
+      "entries": [
+        {
+          "value": "146.88.240.182",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "40.83.182.122",
+      "entries": [
+        {
+          "value": "40.83.182.122",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "66.132.186.226",
+      "entries": [
+        {
+          "value": "66.132.186.226",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "92.118.39.195",
+      "entries": [
+        {
+          "value": "92.118.39.195",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "RO",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "104.243.34.165",
+      "entries": [
+        {
+          "value": "104.243.34.165",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "45.88.138.44",
+      "entries": [
+        {
+          "value": "45.88.138.44",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "BG",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "207.154.223.29",
+      "entries": [
+        {
+          "value": "207.154.223.29",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "DE",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "24.220.187.180",
+      "entries": [
+        {
+          "value": "24.220.187.180",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "92.118.39.196",
+      "entries": [
+        {
+          "value": "92.118.39.196",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "RO",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "2.57.122.192",
+      "entries": [
+        {
+          "value": "2.57.122.192",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "RO",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "23.101.8.77",
+      "entries": [
+        {
+          "value": "23.101.8.77",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "HK",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "124.163.203.85",
+      "entries": [
+        {
+          "value": "124.163.203.85",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "CN",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "201.217.12.57",
+      "entries": [
+        {
+          "value": "201.217.12.57",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "PY",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "134.209.53.95",
+      "entries": [
+        {
+          "value": "134.209.53.95",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "45.148.10.147",
+      "entries": [
+        {
+          "value": "45.148.10.147",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "NL",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "103.174.80.40",
+      "entries": [
+        {
+          "value": "103.174.80.40",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "IN",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "135.235.138.43",
+      "entries": [
+        {
+          "value": "135.235.138.43",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "IN",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "42.200.66.164",
+      "entries": [
+        {
+          "value": "42.200.66.164",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "HK",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "165.154.6.102",
+      "entries": [
+        {
+          "value": "165.154.6.102",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "HK",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "78.66.119.139",
+      "entries": [
+        {
+          "value": "78.66.119.139",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "SE",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "152.52.205.86",
+      "entries": [
+        {
+          "value": "152.52.205.86",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "IN",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "152.32.240.183",
+      "entries": [
+        {
+          "value": "152.32.240.183",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "HK",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "107.167.34.125",
+      "entries": [
+        {
+          "value": "107.167.34.125",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "45.148.10.157",
+      "entries": [
+        {
+          "value": "45.148.10.157",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "NL",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "35.130.111.146",
+      "entries": [
+        {
+          "value": "35.130.111.146",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "152.32.215.134",
+      "entries": [
+        {
+          "value": "152.32.215.134",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "HK",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "158.178.141.16",
+      "entries": [
+        {
+          "value": "158.178.141.16",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "AU",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "108.181.71.5",
+      "entries": [
+        {
+          "value": "108.181.71.5",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "ES",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "45.177.210.193",
+      "entries": [
+        {
+          "value": "45.177.210.193",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "BR",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "65.49.20.95",
+      "entries": [
+        {
+          "value": "65.49.20.95",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "122.225.203.106",
+      "entries": [
+        {
+          "value": "122.225.203.106",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "CN",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "51.255.201.222",
+      "entries": [
+        {
+          "value": "51.255.201.222",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "FR",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "2.57.122.189",
+      "entries": [
+        {
+          "value": "2.57.122.189",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "RO",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "165.22.99.20",
+      "entries": [
+        {
+          "value": "165.22.99.20",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "SG",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "47.103.36.53",
+      "entries": [
+        {
+          "value": "47.103.36.53",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "CN",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "46.151.178.13",
+      "entries": [
+        {
+          "value": "46.151.178.13",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "NL",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "45.148.10.118",
+      "entries": [
+        {
+          "value": "45.148.10.118",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "NL",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "184.105.247.214",
+      "entries": [
+        {
+          "value": "184.105.247.214",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "47.84.137.32",
+      "entries": [
+        {
+          "value": "47.84.137.32",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "SG",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "59.24.34.224",
+      "entries": [
+        {
+          "value": "59.24.34.224",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "KR",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "104.37.191.3",
+      "entries": [
+        {
+          "value": "104.37.191.3",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "US",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "2.57.122.191",
+      "entries": [
+        {
+          "value": "2.57.122.191",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "RO",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    },
+    {
+      "value": "87.251.64.149",
+      "entries": [
+        {
+          "value": "87.251.64.149",
+          "type": "IPv4",
+          "source": "AbuseIPDB",
+          "abuse_score": 100,
+          "country": "PL",
+          "total_reports": 0,
+          "tags": []
+        }
+      ]
+    }
+  ]
+}

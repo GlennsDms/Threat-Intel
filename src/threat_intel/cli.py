@@ -4,7 +4,7 @@ from rich.table import Table
 from rich.panel import Panel
 from rich import box
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from threat_intel.alerts import dispatch
 from threat_intel.exporter import to_json, to_stix
 
@@ -32,6 +32,7 @@ def run(
     export: bool = typer.Option(False, help="Export report as JSON and STIX"),
 ):
     """Fetch threat intel feeds, correlate IOCs, and generate a report."""
+    print("STARTING...")
     console.print(Panel("[bold cyan]Threat Intelligence Aggregator[/bold cyan]", box=box.ROUNDED))
 
     # Step 1 - Fetch OTX
@@ -210,3 +211,6 @@ def lookup(
             console.print(f"  Threat: {urlhaus.get('threat', 'unknown')}")
         except Exception as e:
             console.print(f"  [red]Failed: {e}[/red]")
+    
+    if __name__ == "__main__":
+        app()

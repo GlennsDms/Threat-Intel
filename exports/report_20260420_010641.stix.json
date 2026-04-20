@@ -1,0 +1,226 @@
+{
+  "type": "bundle",
+  "id": "bundle--ff2f966a-653b-4188-a295-ca4d2e462d0a",
+  "objects": [
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--f9bb374c-65b2-48fd-836b-24e12b367ed1",
+      "value": "20.163.32.211"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--4e08e2bf-58d8-4c3a-b1bf-1120a5528350",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 20.163.32.211",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '20.163.32.211']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--767e5afa-8cc0-42b8-9fb0-6e91da63eeb0",
+      "value": "109.91.4.177"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--15cd91dc-ec69-49d7-9ccd-2c9a25139c52",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 109.91.4.177",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '109.91.4.177']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--b548e3a8-4189-46e3-9b73-0e5650e4fc09",
+      "value": "2.57.122.196"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--61a8263d-0975-4c73-828c-ab2c34fb4f1c",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 2.57.122.196",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '2.57.122.196']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--9ebb43d9-686c-4c84-991c-421194e047df",
+      "value": "164.90.166.126"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--0c5dffcd-c64c-49b7-a02d-6254725c4cb3",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 164.90.166.126",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '164.90.166.126']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--fbd7b8e6-cedb-45c0-be35-a20447803c33",
+      "value": "80.245.93.133"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d0dc78c6-4ef7-4c4a-98a2-5cd2da737103",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 80.245.93.133",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '80.245.93.133']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--77e4a370-7c82-4d80-8213-9f5abe12a118",
+      "value": "18.221.179.104"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8bd5f27c-1db4-43e9-a77f-a05ffeec6004",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 18.221.179.104",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '18.221.179.104']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--2528bb6a-1b4f-4173-b0e0-d960d13b8a41",
+      "value": "221.10.187.253"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--6428b9c7-9776-4565-8e01-3675fe9a313d",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 221.10.187.253",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '221.10.187.253']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--e8d29d00-153e-40e5-b0df-ac63f5e2862d",
+      "value": "146.88.240.182"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--d4e57543-5cdb-4c8c-8bb1-23ed9070f45d",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 146.88.240.182",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '146.88.240.182']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--77828351-124e-45c1-b195-7ca0f5cb5197",
+      "value": "40.83.182.122"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--8cdb6516-4fa1-4cf9-92ef-b499edd27641",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 40.83.182.122",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '40.83.182.122']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--d65de330-a36e-41ad-b0de-573ae1b60c5b",
+      "value": "66.132.186.226"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--81017069-f829-42e2-8311-cf6b2e767052",
+      "created": "2026-04-20T01:06:41.458067+00:00",
+      "modified": "2026-04-20T01:06:41.458067+00:00",
+      "name": "Malicious IPv4: 66.132.186.226",
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "pattern": "[ipv4-addr:value = '66.132.186.226']",
+      "pattern_type": "stix",
+      "valid_from": "2026-04-20T01:06:41.458067+00:00",
+      "confidence": 70,
+      "labels": []
+    }
+  ]
+}

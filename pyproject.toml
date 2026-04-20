@@ -1,7 +1,7 @@
 [project]
 name = "threat-intel"
 version = "0.1.0"
-description = "Add your description here"
+description = "Threat intelligence aggregator that correlates IOCs from OTX, AbuseIPDB, and URLhaus and generates executive reports using a local LLM."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -18,3 +18,5 @@ dependencies = [
 dev = [
     "pytest>=9.0.3",
 ]
+[project.scripts]
+threat-intel = "threat_intel.cli:app"

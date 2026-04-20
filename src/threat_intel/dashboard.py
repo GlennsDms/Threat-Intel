@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
+from threat_intel.alerts import dispatch
+from threat_intel.exporter import to_json, to_stix
+from datetime import datetime, timezone
+from pathlib import Path
+import json
 
 from threat_intel.feeds import (
     otx_get_subscribed_pulses,
@@ -202,3 +207,46 @@ if run_button:
                 st.markdown(report)
             except Exception as e:
                 st.error(f"LLM failed: {e}")
+
+    # Alerts
+    st.divider()
+    col_alert, col_export = st.columns(2)
+
+    with col_alert:
+        st.subheader("Alerts")
+        if st.button("Send alerts"):
+            results = dispatch(top, stats)
+            if results["slack"]:
+                st.success("Slack alert sent")
+            elif not results["slack"]:
+                st.warning("Slack not configured or no high-confidence IOCs")
+            if results["email"]:
+                st.success("Email alert sent")
+            elif not results["email"]:
+                st.warning("Email not configured or no high-confidence IOCs")
+
+    with col_export:
+        st.subheader("Export")
+        if st.button("Export JSON + STIX"):
+            ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+            json_path = Path(f"exports/report_{ts}.json")
+            stix_path = Path(f"exports/report_{ts}.stix.json")
+            to_json(correlated, top, stats, json_path)
+            to_stix(top, stix_path)
+            st.success(f"Files saved to exports/")
+
+            json_data = json_path.read_text()
+            stix_data = stix_path.read_text()
+
+            st.download_button(
+                label="Download JSON",
+                data=json_data,
+                file_name=json_path.name,
+                mime="application/json",
+            )
+            st.download_button(
+                label="Download STIX",
+                data=stix_data,
+                file_name=stix_path.name,
+                mime="application/json",
+            )
