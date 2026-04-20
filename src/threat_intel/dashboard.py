@@ -1,11 +1,8 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime
-from threat_intel.alerts import dispatch
-from threat_intel.exporter import to_json, to_stix
+import json
 from datetime import datetime, timezone
 from pathlib import Path
-import json
 
 from threat_intel.feeds import (
     otx_get_subscribed_pulses,
@@ -18,6 +15,8 @@ from threat_intel.feeds import (
 )
 from threat_intel.correlator import correlate, top_iocs, summary_stats
 from threat_intel.summarizer import generate_report
+from threat_intel.alerts import dispatch
+from threat_intel.exporter import to_json, to_stix
 
 st.set_page_config(
     page_title="Threat Intel Dashboard",
@@ -28,7 +27,7 @@ st.set_page_config(
 st.title(":shield: Threat Intelligence Dashboard")
 st.caption("Aggregates IOCs from OTX, AbuseIPDB, and URLhaus")
 
-# ─── Sidebar controls ─────────────────────────────────────────────────────────
+# ─── Sidebar ──────────────────────────────────────────────────────────────────
 
 with st.sidebar:
     st.header("Settings")
@@ -38,9 +37,6 @@ with st.sidebar:
     run_llm = st.checkbox("Generate LLM report", value=True)
     run_button = st.button("Fetch & Analyze", type="primary")
 
-# ─── IOC Lookup ───────────────────────────────────────────────────────────────
-
-with st.sidebar:
     st.divider()
     st.header("IOC Lookup")
     lookup_value = st.text_input("IOC value (IP, domain, hash)")
@@ -49,6 +45,8 @@ with st.sidebar:
         ["IPv4", "domain", "hostname", "url", "FileHash-MD5", "FileHash-SHA256"]
     )
     lookup_button = st.button("Look up")
+
+# ─── IOC Lookup ───────────────────────────────────────────────────────────────
 
 if lookup_button and lookup_value:
     st.subheader(f"Lookup: {lookup_value}")
@@ -160,7 +158,17 @@ if run_button:
         stats = summary_stats(correlated)
         top = top_iocs(correlated, n=20)
 
-    # Stats row
+    st.session_state["correlated"] = correlated
+    st.session_state["stats"] = stats
+    st.session_state["top"] = top
+
+# ─── Results (persists across button clicks) ──────────────────────────────────
+
+if "correlated" in st.session_state:
+    correlated = st.session_state["correlated"]
+    stats = st.session_state["stats"]
+    top = st.session_state["top"]
+
     st.divider()
     st.subheader("Summary")
     c1, c2, c3, c4 = st.columns(4)
@@ -169,7 +177,6 @@ if run_button:
     c3.metric("Cross-source", stats["cross_source_matches"])
     c4.metric("High confidence", stats["high_confidence_count"])
 
-    # IOC type breakdown
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("IOC Types")
@@ -186,7 +193,6 @@ if run_button:
             ).sort_values("Count", ascending=False)
             st.bar_chart(country_df.set_index("Country"))
 
-    # Top IOCs table
     st.subheader("Top IOCs by Risk Score")
     top_df = pd.DataFrame(top)
     if not top_df.empty:
@@ -197,7 +203,6 @@ if run_button:
             use_container_width=True,
         )
 
-    # LLM report
     if run_llm:
         st.divider()
         st.subheader("Executive Report")
@@ -208,7 +213,6 @@ if run_button:
             except Exception as e:
                 st.error(f"LLM failed: {e}")
 
-    # Alerts
     st.divider()
     col_alert, col_export = st.columns(2)
 
@@ -218,11 +222,11 @@ if run_button:
             results = dispatch(top, stats)
             if results["slack"]:
                 st.success("Slack alert sent")
-            elif not results["slack"]:
+            else:
                 st.warning("Slack not configured or no high-confidence IOCs")
             if results["email"]:
                 st.success("Email alert sent")
-            elif not results["email"]:
+            else:
                 st.warning("Email not configured or no high-confidence IOCs")
 
     with col_export:
@@ -233,20 +237,17 @@ if run_button:
             stix_path = Path(f"exports/report_{ts}.stix.json")
             to_json(correlated, top, stats, json_path)
             to_stix(top, stix_path)
-            st.success(f"Files saved to exports/")
-
-            json_data = json_path.read_text()
-            stix_data = stix_path.read_text()
+            st.success("Files saved to exports/")
 
             st.download_button(
                 label="Download JSON",
-                data=json_data,
+                data=json_path.read_text(),
                 file_name=json_path.name,
                 mime="application/json",
             )
             st.download_button(
                 label="Download STIX",
-                data=stix_data,
+                data=stix_path.read_text(),
                 file_name=stix_path.name,
                 mime="application/json",
             )
