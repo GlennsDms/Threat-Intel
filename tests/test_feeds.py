@@ -1,7 +1,6 @@
 import pytest
 import requests
 from unittest.mock import patch, MagicMock
-from pathlib import Path
 from threat_intel.feeds import (
     _cache_path,
     _cache_get,

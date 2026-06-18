@@ -1,6 +1,5 @@
 import os
 import json
-import time
 import hashlib
 import requests
 from pathlib import Path
@@ -280,5 +279,5 @@ def urlhaus_recent_urls(limit: int = 20) -> list[dict]:
         data = response.json().get("urls", [])
         _cache_set(cache_key, data)
         return data
-    except requests.RequestException as e:
+    except requests.RequestException:
         return []

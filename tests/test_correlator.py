@@ -1,4 +1,3 @@
-import pytest
 from threat_intel.correlator import correlate, top_iocs, summary_stats, _risk_score
 
 

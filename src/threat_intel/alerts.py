@@ -1,9 +1,7 @@
 import os
-import json
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from pathlib import Path
 from datetime import datetime, timezone
 import requests
 from dotenv import load_dotenv

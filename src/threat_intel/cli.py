@@ -17,7 +17,7 @@ from threat_intel.feeds import (
     urlhaus_recent_urls,
     urlhaus_lookup_host,
 )
-from threat_intel.correlator import correlate, top_iocs, summary_stats, enrich_with_abuseipdb
+from threat_intel.correlator import correlate, top_iocs, summary_stats
 from threat_intel.summarizer import generate_report, format_report_for_terminal
 
 app = typer.Typer()
