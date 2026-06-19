@@ -1,8 +1,12 @@
+import os
+
 import pytest
+
 from threat_intel.feeds import urlhaus_recent_urls
 
 
 @pytest.mark.integration
+@pytest.mark.skipif(not os.getenv("URLHAUS_API_KEY"), reason="requiere URLHAUS_API_KEY")
 def test_urlhaus_recent_urls_contract(tmp_path, monkeypatch):
     # cache vacia para forzar llamada en vivo
     monkeypatch.setattr("threat_intel.feeds.CACHE_DIR", tmp_path)
