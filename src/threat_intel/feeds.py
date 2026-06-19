@@ -23,7 +23,7 @@ URLHAUS_BASE = "https://urlhaus-api.abuse.ch/v1"
 # ─── Cache ────────────────────────────────────────────────────────────────────
 
 def _cache_path(key: str) -> Path:
-    hashed = hashlib.md5(key.encode()).hexdigest()
+    hashed = hashlib.md5(key.encode(), usedforsecurity=False).hexdigest()
     return CACHE_DIR / f"{hashed}.json"
 
 
