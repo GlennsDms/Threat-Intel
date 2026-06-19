@@ -11,6 +11,7 @@ load_dotenv()
 
 OTX_API_KEY = os.getenv("OTX_API_KEY", "")
 ABUSEIPDB_API_KEY = os.getenv("ABUSEIPDB_API_KEY", "")
+URLHAUS_API_KEY = os.getenv("URLHAUS_API_KEY", "")
 
 CACHE_DIR = Path("data/cache")
 CACHE_TTL_HOURS = 6
@@ -233,6 +234,7 @@ def urlhaus_lookup_url(url: str) -> dict:
         response = requests.post(
             f"{URLHAUS_BASE}/url/",
             data={"url": url},
+            headers={"Auth-Key": URLHAUS_API_KEY},
             timeout=15,
         )
         response.raise_for_status()
@@ -254,6 +256,7 @@ def urlhaus_lookup_host(host: str) -> dict:
         response = requests.post(
             f"{URLHAUS_BASE}/host/",
             data={"host": host},
+            headers={"Auth-Key": URLHAUS_API_KEY},
             timeout=15,
         )
         response.raise_for_status()
@@ -274,6 +277,7 @@ def urlhaus_recent_urls(limit: int = 20) -> list[dict]:
     try:
         response = requests.get(
             f"{URLHAUS_BASE}/urls/recent/limit/{limit}/",
+            headers={"Auth-Key": URLHAUS_API_KEY},
             timeout=15,
         )
         response.raise_for_status()
