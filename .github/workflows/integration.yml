@@ -1,0 +1,26 @@
+﻿name: Integration Tests
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  integration:
+    name: Integration (live APIs)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: uv sync --dev
+
+      - name: Run integration tests
+        run: uv run pytest -v -m integration
+        env:
+          URLHAUS_API_KEY: ${{ secrets.URLHAUS_API_KEY }}
