@@ -3,7 +3,6 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
-
 STIX_SPEC_VERSION = "2.1"
 
 

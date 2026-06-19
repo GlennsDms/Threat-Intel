@@ -1,4 +1,5 @@
 import os
+
 import ollama
 from dotenv import load_dotenv
 

@@ -1,5 +1,4 @@
-from threat_intel.correlator import correlate, top_iocs, summary_stats, _risk_score
-
+from threat_intel.correlator import _risk_score, correlate, summary_stats, top_iocs
 
 SAMPLE_IOCS = [
     {"value": "1.2.3.4", "type": "IPv4", "source": "OTX", "tags": ["malware"], "abuse_score": 0},

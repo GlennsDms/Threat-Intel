@@ -1,15 +1,16 @@
+from unittest.mock import MagicMock, patch
+
 import pytest
 import requests
-from unittest.mock import patch, MagicMock
-from threat_intel.feeds import (
-    _cache_path,
-    _cache_get,
-    _cache_set,
-    otx_extract_iocs,
-    abuseipdb_check_ip,
-    abuseipdb_blacklist,
-)
 
+from threat_intel.feeds import (
+    _cache_get,
+    _cache_path,
+    _cache_set,
+    abuseipdb_blacklist,
+    abuseipdb_check_ip,
+    otx_extract_iocs,
+)
 
 # ─── Cache tests ──────────────────────────────────────────────────────────────
 

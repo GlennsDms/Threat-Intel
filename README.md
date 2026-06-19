@@ -1,4 +1,5 @@
 # threat-intel
+![CI](https://github.com/GlennsDms/Threat-Intel/actions/workflows/ci.yml/badge.svg)
 
 Pulls threat intelligence from OTX, AbuseIPDB, and URLhaus, correlates the IOCs, and writes an executive report using a local LLM. Also has a Streamlit dashboard if you prefer something visual.
 
