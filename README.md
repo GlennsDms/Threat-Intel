@@ -71,6 +71,17 @@ uv run streamlit run src/threat_intel/dashboard.py
 
 Opens in the browser. Sliders to control data volume, a table of top IOCs by risk score, charts by type and country, LLM report at the bottom, and a lookup tool in the sidebar.
 
+## CI/CD Pipeline
+
+Every push and pull request triggers a GitHub Actions pipeline with four independent checks:
+
+* **Lint (Ruff):** code style enforcement and static error detection.
+* **Tests (Pytest):** 19 unit tests with external dependencies fully mocked.
+* **SAST (Bandit):** static application security testing on the source code.
+* **SCA (pip-audit):** dependency auditing against known CVEs.
+
+During development, pip-audit identified 12 vulnerabilities across 4 transitive dependencies (GitPython, idna, tornado, and urllib3). All issues were remediated by upgrading to patched versions.
+
 ## How risk scoring works
 
 Each IOC scores 0–100 based on how many sources reported it, AbuseIPDB confidence and report count, whether it's a Tor exit node or proxy, and OTX tags like malware, ransomware, botnet, c2, apt.
